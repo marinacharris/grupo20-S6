@@ -11,7 +11,7 @@ print(df1['weight'].mean()) #Me arroja un promedio del peso
 datosGrupoSexo = df1.groupby('sex') # Creamos un grupo
 print(datosGrupoSexo.describe()) #obtenemos información del grupo
 print(datosGrupoSexo.max())
-print(df1.groupby('species_id').count())
+print(df1.groupby('species_id')['record_id'].count()['NL'])
 
 
 

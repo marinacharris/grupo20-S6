@@ -12,4 +12,4 @@ print(df1.iloc[0:4,1:3])
 print(df1.iloc[[0,4,7],:])
 print(df1.iloc[4,2])
 print(df1[df1.year==1977]) # filtro de filas según un criterio
-print(df1[(df1.year >= 1985) & (df1.year <=1995)])
+print(df1[(df1.year >= 1985) & (df1.year <=1995)]) #and: &, or: |, not:~
